@@ -44,6 +44,7 @@ def what_day(Date):
     cyr = int(r / 4)
     t = c + y + r + cyr
     doomsday = t % 7
+    d_d = 1
 
 
     # d_rem calculator
