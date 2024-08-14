@@ -122,9 +122,6 @@ font = pygame.font.Font(None, 60)
 clock = pygame.time.Clock()
 
 
-bg = pygame.image.load(assects_pather("bg.jpg"))
-
-
 active_color = (255, 0, 0)
 passive_color = (0, 0, 0)
 
@@ -174,7 +171,7 @@ while running:
 
     user_date = font.render(user_in, True, "Black")
 
-    screen.blit(bg, (0, 0))
+    screen.fill("Gray")
     pygame.draw.rect(screen, inp_color, inp_rect, 10)
     screen.blit(date, (67, 162))
     screen.blit(user_date, (175, 162))
